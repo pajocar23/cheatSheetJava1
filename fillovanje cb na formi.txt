@@ -1,0 +1,14 @@
+ public void fillCbUser() {
+        /*cbUser.RemoveAllItems();
+        List<User> useri=Controller.getInstane().getAllUseri();
+        for(User user:users){
+            cbUser.addItem(user);
+        }*/
+    }
+
+    public void fillCbEnum() {
+        /*cbEnum.RemoveAllItems();
+        for(Enum enum:Enum.values()){
+            cbEnum.addItem(enum);
+        }*/
+    }
