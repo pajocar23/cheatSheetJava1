@@ -1,0 +1,32 @@
+public class ViewController {
+
+    private static ViewController instance;
+    private FrmLogIn frmLogin;
+    private FrmMain frmMain;
+
+    private ViewController() {
+
+    }
+
+    public static ViewController getInstance() {
+        if (instance == null) {
+            instance = new ViewController();
+        }
+        return instance;
+    }
+    
+    
+     public void startApp(){
+        frmLogin=new FrmLogIn();
+        frmLogin.setTitle("Log in");
+        frmLogin.setVisible(true);
+        frmLogin.setLocationRelativeTo(null);
+    }
+    
+    public void openMainFrm(){
+        frmMain=new FrmMain();
+        frmMain.setTitle("Main form");
+        frmMain.setVisible(true);
+        frmMain.setExtendedState(Frame.MAXIMIZED_BOTH);
+    }
+}
