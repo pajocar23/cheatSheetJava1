@@ -1,0 +1,14 @@
+public interface IdbRepository<T, K> extends IRepository<T, K>{
+
+    @Override
+    public default void connect() throws Exception {
+        DbConnectionFactory.getInstance().getConnection();
+    }
+
+    @Override
+    public default void disconnect() throws Exception {
+         DbConnectionFactory.getInstance().getConnection().close();
+    }
+    
+    
+}
