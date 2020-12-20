@@ -1,0 +1,17 @@
+ /*private void fillTableIspiti() throws Exception {
+        List<Ispit> ispiti=Controller.getInstane().getAllIspiti();
+        IspitTableModel model=new IspitTableModel(ispiti);
+        tblIspit.setModel(model);
+        
+        List<Predmet> predmeti=Controller.getInstane().getAllPredmetiUlogovanogProfesora(Controller.getInstane().getLoggedProfesor());
+        JComboBox cbPredmets=new JComboBox(predmeti.toArray());
+        
+        TableColumn tc=tblIspit.getColumnModel().getColumn(2);
+        tc.setCellEditor(new DefaultCellEditor(cbPredmets));
+        
+        List<Student> studenti=Controller.getInstane().getAllStudenti();
+        JComboBox cbStudenti=new JComboBox(studenti.toArray());
+        
+        TableColumn tc2=tblIspit.getColumnModel().getColumn(1);
+        tc2.setCellEditor(new DefaultCellEditor(cbStudenti));
+    }*/
